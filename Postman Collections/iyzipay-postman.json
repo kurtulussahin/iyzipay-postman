@@ -1,7 +1,7 @@
 {
   "variables": [],
   "info": {
-    "name": "iyzipay-postman",
+    "name": "iyzipay",
     "_postman_id": "a7f969d0-d0f6-25a0-321c-89944a84a1a9",
     "description": "iyzico API has been developed to support merchants with extended online payment services and can be easily integrated into existing platforms. All services are based on a stateless RESTful service architecture that requires API clients to access these services (e.g. for data marshalling / unmarshalling and PKI (public key infrastructure) encryption / decryption).\n\nSANDBOX  : sandbox-merchant.iyzipay.com\nGITHUB   : github.com/iyzico/iyzipay-php\nDEV PAGE : dev.iyzipay.com/en",
     "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
