@@ -4444,7 +4444,7 @@
               "tests[\"pki string: \" + globals.pkiString ] = true",
               "tests[\"authorization: \" + globals.authorization ] = true",
               "tests[\"json: \" + request.data ] = true",
-              "tests[\"randomString: \" + request.headers[\"x-iyzi-rnd\"] ] = true"
+              ""
             ]
           }
         },
@@ -4543,10 +4543,6 @@
               "//generate authorization string",
               "function generateAuthorizationString(obj) {",
               "    var requestString = generateRequestString(obj);",
-              "    if(request.headers[\"x-iyzi-rnd\"] === \"\"){",
-              "        postman.setGlobalVariable(\"123xxx123\", randomString);",
-              "    }",
-              "    ",
               "    var hashSha1 =  CryptoJS.SHA1(apiKey+request.headers[\"x-iyzi-rnd\"]+secretKey+requestString);",
               "    var hashInBase64 = CryptoJS.enc.Base64.stringify(hashSha1);",
               "    var authorization = \"IYZWS\"+\" \"+apiKey+\":\"+hashInBase64;",
@@ -4575,7 +4571,7 @@
           },
           {
             "key": "x-iyzi-rnd",
-            "value": "{{randomString}}",
+            "value": "123456789",
             "description": ""
           },
           {
