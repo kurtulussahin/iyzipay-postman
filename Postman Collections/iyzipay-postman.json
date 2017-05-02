@@ -4411,15 +4411,14 @@
           "script": {
             "type": "text/javascript",
             "exec": [
-              "postman.setGlobalVariable('apiKey',\"\");",
-              "postman.setGlobalVariable('secretKey',\"\");",
+              "",
               ""
             ]
           }
         }
       ],
       "request": {
-        "url": "https://sandbox-api.iyzipay.com/payment/test",
+        "url": "{{baseUrl}}/payment/test",
         "method": "GET",
         "header": [],
         "body": {
