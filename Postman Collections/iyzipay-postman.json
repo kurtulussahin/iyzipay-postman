@@ -4675,8 +4675,8 @@
               "script": {
                 "type": "text/javascript",
                 "exec": [
-                  "var apiKey = globals.apiKey",
-                  "var secretKey = globals.secretKey",
+                  "var apiKey = environment.apiKey;",
+                  "var secretKey = environment.secretKey;",
                   "",
                   "//import crypto-js sha1",
                   "$.getScript(\"https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha1.min.js\",",
@@ -4804,7 +4804,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"paymentId\": \"d9a1d90e-7cfb-4ead-a6ec-34237bac04f0\"\n}\n"
+              "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"paymentId\": \"123456\"\n}\n"
             },
             "description": ""
           },
