@@ -2462,7 +2462,7 @@
       "item": [
         {
           "_postman_id": "b09f5815-e303-8660-3241-1536f1baaf4a",
-          "name": "Initialize Checkout",
+          "name": "Initialize APM",
           "event": [
             {
               "listen": "test",
@@ -2556,26 +2556,27 @@
                   "var basketItems = [];",
                   "var enabledInstallments = [];",
                   "",
-                  "var initializeCheckout = {",
+                  "var initializeApm = {",
                   "    locale: null,",
                   "    conversationId: null,",
                   "    price: null,",
-                  "    installment: null,",
+                  "    paidPrice: null,",
                   "    paymentChannel: null,",
-                  "    basketId: null,",
                   "    paymentGroup: null,",
+                  "    paymentSource:null,",
+                  "    currency: null,",
+                  "    merchantOrderId: null,",
+                  "    countryCode:null,",
+                  "    accountHolderName:null,",
+                  "    merchantCallbackUrl:null,",
+                  "    merchantErrorUrl:null,",
+                  "    merchantNotificationUrl:null,",
+                  "    apmType:null,",
+                  "    basketId: null,",
                   "    buyer: buyer,",
                   "    shippingAddress: shippingAddress,",
                   "    billingAddress: billingAddress,",
-                  "    basketItems: basketItems,",
-                  "    callbackUrl:null,",
-                  "    paymentSource:null,",
-                  "    currency: null,",
-                  "    paidPrice: null,",
-                  "    forceThreeDS:null,",
-                  "    cardUserKey: null,",
-                  "    enabledInstallments:enabledInstallments,",
-                  "    enabledCardFamily: null",
+                  "    basketItems: basketItems",
                   "};",
                   "",
                   "function nullClear(obj){",
@@ -2658,7 +2659,7 @@
                   "    return authorization",
                   "}",
                   "",
-                  "var requestModel = initializeCheckout;",
+                  "var requestModel = initializeApm;",
                   "requestModel = jsonToObj(request.data, requestModel);",
                   "var authorization = generateAuthorizationString(requestModel)",
                   "postman.setGlobalVariable(\"authorization\", authorization);",
@@ -2668,7 +2669,7 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/payment/iyzipos/checkoutform/initialize/auth/ecom",
+            "url": "{{baseUrl}}/payment/apm/initialize",
             "method": "POST",
             "header": [
               {
@@ -2691,7 +2692,7 @@
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"price\": \"1.0\",\n    \"paidPrice\": \"1.2\",\n    \"currency\": \"TRY\",\n    \"basketId\": \"B67832\",\n    \"paymentGroup\": \"PRODUCT\",\n    \"callbackUrl\": \"https://www.merchant.com/callback\",\n    \"enabledInstallments\": [\n        1,\n        2,\n        3,\n        6,\n        9,\n        12\n    ],\n    \"buyer\": {\n        \"id\": \"BY789\",\n        \"name\": \"John\",\n        \"surname\": \"Doe\",\n        \"identityNumber\": \"74300864791\",\n        \"email\": \"email@email.com\",\n        \"gsmNumber\": \"+905350000000\",\n        \"registrationDate\": \"2013-04-21 15:12:09\",\n        \"lastLoginDate\": \"2015-10-05 12:43:35\",\n        \"registrationAddress\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\",\n        \"zipCode\": \"34732\",\n        \"ip\": \"85.34.78.112\"\n    },\n    \"shippingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"billingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"basketItems\": [\n        {\n            \"id\": \"BI101\",\n            \"price\": \"0.3\",\n            \"name\": \"Binocular\",\n            \"category1\": \"Collectibles\",\n            \"category2\": \"Accessories\",\n            \"itemType\": \"PHYSICAL\"\n        },\n        {\n            \"id\": \"BI102\",\n            \"price\": \"0.5\",\n            \"name\": \"Game code\",\n            \"category1\": \"Game\",\n            \"category2\": \"Online Game Items\",\n            \"itemType\": \"VIRTUAL\"\n        },\n        {\n            \"id\": \"BI103\",\n            \"name\": \"Usb\",\n            \"price\": \"0.2\",\n            \"category1\": \"Electronics\",\n            \"category2\": \"Usb / Cable\",\n            \"itemType\": \"PHYSICAL\"\n        }\n    ]\n}"
             },
-            "description": "Dev Page : https://dev.iyzipay.com/en/checkout-form/initialize"
+            "description": ""
           },
           "response": []
         },
