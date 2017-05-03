@@ -2298,7 +2298,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"name\": \"John's market\",\n    \"email\": \"email@submerchantemail.com\",\n    \"gsmNumber\": \"+905350000000\",\n    \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n    \"iban\": \"TR180006200119000006672315\",\n    \"contactName\": \"John\",\n    \"contactSurname\": \"Doe\",\n    \"currency\": \"TRY\",\n    \"subMerchantExternalId\": \"B49224\",\n    \"identityNumber\": \"1234567890\",\n    \"subMerchantType\": \"PERSONAL\"\n}"
+              "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"name\": \"John's market\",\n    \"email\": \"email@submerchantemail.com\",\n    \"gsmNumber\": \"+905350000000\",\n    \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n    \"iban\": \"TR180006200119000006672315\",\n    \"contactName\": \"John\",\n    \"contactSurname\": \"Doe\",\n    \"currency\": \"TRY\",\n    \"subMerchantExternalId\": \"B492224\",\n    \"identityNumber\": \"1234567890\",\n    \"subMerchantType\": \"PERSONAL\"\n}"
             },
             "description": "https://sandbox-api.iyzipay.com/onboarding/submerchant"
           },
