@@ -201,8 +201,8 @@
               "script": {
                 "type": "text/javascript",
                 "exec": [
-                  "var apiKey = environment.apiKey;",
-                  "var secretKey = environment.secretKey;",
+                  "var apiKey = globals.apiKey",
+                  "var secretKey = globals.secretKey",
                   "",
                   "//import crypto-js sha1",
                   "$.getScript(\"https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha1.min.js\",",
@@ -363,8 +363,8 @@
               "script": {
                 "type": "text/javascript",
                 "exec": [
-                  "var apiKey = environment.apiKey;",
-                  "var secretKey = environment.secretKey;",
+                  "var apiKey = globals.apiKey",
+                  "var secretKey = globals.secretKey",
                   "",
                   "//import crypto-js sha1",
                   "$.getScript(\"https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha1.min.js\",",
@@ -605,8 +605,8 @@
               "script": {
                 "type": "text/javascript",
                 "exec": [
-                  "var apiKey = environment.apiKey;",
-                  "var secretKey = environment.secretKey;",
+                  "var apiKey = globals.apiKey",
+                  "var secretKey = globals.secretKey",
                   "//import crypto-js sha1",
                   "$.getScript(\"https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha1.min.js\",",
                   "function()",
@@ -839,8 +839,8 @@
               "script": {
                 "type": "text/javascript",
                 "exec": [
-                  "var apiKey = environment.apiKey;",
-                  "var secretKey = environment.secretKey;",
+                  "var apiKey = globals.apiKey",
+                  "var secretKey = globals.secretKey",
                   "",
                   "//import crypto-js sha1",
                   "$.getScript(\"https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha1.min.js\",",
@@ -1016,8 +1016,8 @@
               "script": {
                 "type": "text/javascript",
                 "exec": [
-                  "var apiKey = environment.apiKey;",
-                  "var secretKey = environment.secretKey;",
+                  "var apiKey = globals.apiKey",
+                  "var secretKey = globals.secretKey",
                   "",
                   "//import crypto-js sha1",
                   "$.getScript(\"https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha1.min.js\",",
@@ -1193,8 +1193,8 @@
               "script": {
                 "type": "text/javascript",
                 "exec": [
-                  "var apiKey = environment.apiKey;",
-                  "var secretKey = environment.secretKey;",
+                  "var apiKey = globals.apiKey",
+                  "var secretKey = globals.secretKey",
                   "",
                   "//import crypto-js sha1",
                   "$.getScript(\"https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha1.min.js\",",
@@ -1370,8 +1370,9 @@
               "script": {
                 "type": "text/javascript",
                 "exec": [
-                  "var apiKey = environment.apiKey;",
-                  "var secretKey = environment.secretKey;",
+                  "var apiKey = globals.apiKey",
+                  "var secretKey = globals.secretKey",
+                  "",
                   "//import crypto-js sha1",
                   "$.getScript(\"https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha1.min.js\",",
                   "function()",
@@ -1546,8 +1547,8 @@
               "script": {
                 "type": "text/javascript",
                 "exec": [
-                  "var apiKey = environment.apiKey;",
-                  "var secretKey = environment.secretKey;",
+                  "var apiKey = globals.apiKey",
+                  "var secretKey = globals.secretKey",
                   "",
                   "//import crypto-js sha1",
                   "$.getScript(\"https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha1.min.js\",",
@@ -1723,8 +1724,8 @@
               "script": {
                 "type": "text/javascript",
                 "exec": [
-                  "var apiKey = environment.apiKey;",
-                  "var secretKey = environment.secretKey;",
+                  "var apiKey = globals.apiKey",
+                  "var secretKey = globals.secretKey",
                   "",
                   "//import crypto-js sha1",
                   "$.getScript(\"https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/sha1.min.js\",",
