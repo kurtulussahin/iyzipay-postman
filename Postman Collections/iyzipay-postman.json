@@ -4650,7 +4650,7 @@
         },
         {
           "_postman_id": "5430ee57-ca16-74cc-b664-fb0afff3773e",
-          "name": "Retrieve Checkout Form Result copy",
+          "name": "Retrieve Apm",
           "event": [
             {
               "listen": "test",
@@ -4806,7 +4806,7 @@
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"paymentId\": \"d9a1d90e-7cfb-4ead-a6ec-34237bac04f0\"\n}\n"
             },
-            "description": "Dev Page : https://dev.iyzipay.com/en/checkout-form/retrieve"
+            "description": ""
           },
           "response": []
         }
