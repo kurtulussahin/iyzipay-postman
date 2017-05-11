@@ -1072,7 +1072,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"cardUserKey\": \"W2OM/ZUXAn0qCepxpa5Taz89lV0=\"\n}"
+              "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"cardUserKey\": \"\"\n}"
             },
             "description": "https://sandbox-api.iyzipay.com/cardstorage/card"
           },
