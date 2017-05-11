@@ -5278,6 +5278,7 @@
               "    billingAddress: billingAddress,",
               "    basketItems: basketItems,",
               "    currency: null,",
+              "    connectorName: null,",
               "    ",
               "};",
               "",
