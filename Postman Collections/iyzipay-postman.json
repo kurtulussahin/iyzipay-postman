@@ -5438,7 +5438,7 @@
               "    locale:null,",
               "    conversationId:null,",
               "    paymentId: null,",
-              "    ConversationData:null",
+              "    conversationData:null",
               "};",
               "",
               "function nullClear(obj){",
