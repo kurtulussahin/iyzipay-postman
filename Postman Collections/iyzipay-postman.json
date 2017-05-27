@@ -1051,7 +1051,7 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/cardstorage/card",
+            "url": "{{baseUrl}}/cardstorage/cards",
             "method": "POST",
             "header": [
               {
