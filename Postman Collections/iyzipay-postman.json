@@ -5552,7 +5552,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"locale\": \"tr\",\n  \"conversationId\": \"123456789\",\n  \"paymentId\": \"1\",\n  \"paymentConversationId\":\"123456789\"\n}"
+          "raw": "{\n  \"locale\": \"tr\",\n  \"conversationId\": \"123456789\",\n  \"paymentId\": \"1\",\n  \"conversationData\":\"123456789\"\n}"
         },
         "description": "Dev Page : https://dev.iyzipay.com/en/api/auth-with-3d"
       },
