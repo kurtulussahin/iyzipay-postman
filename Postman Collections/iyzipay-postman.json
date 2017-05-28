@@ -4994,7 +4994,7 @@
           "mode": "raw",
           "raw": "{\n  \"locale\": \"tr\",\n  \"binNumber\":\"542119\",\n  \"conversationId\": \"123456789\"\n}"
         },
-        "description": "https://sandbox-api.iyzipay.com//payment/bin/check\n# hello, This is Markdown Live Preview\n\n----\n## what is Markdown?\nsee [Wikipedia](http://en.wikipedia.org/wiki/Markdown)\n\n> Markdown is a lightweight markup language, originally created by John Gruber and Aaron Swartz allowing people \"to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML)\".\n\n----\n## usage\n1. Write markdown text in this textarea.\n2. Click 'HTML Preview' button.\n\n----\n## markdown quick reference\n# headers\n"
+        "description": "https://sandbox-api.iyzipay.com//payment/bin/check"
       },
       "response": []
     },
