@@ -6840,7 +6840,7 @@
     },
     {
       "_postman_id": "4f516e22-1222-5b17-db03-1336148e48b2",
-      "name": "Refund copy",
+      "name": "Create PostAuth",
       "event": [
         {
           "listen": "test",
@@ -6995,7 +6995,7 @@
           "mode": "raw",
           "raw": "{\n  \"locale\": \"tr\",\n  \"conversationId\": \"123456789\",\n  \"paymentTransactionId\":\"1\",\n  \"price\":\"1.0\",\n  \"currency\":\"TRY\",\n  \"ip\":\"85.34.78.112\"\n}"
         },
-        "description": "Dev Page : https://dev.iyzipay.com/en/api/refund"
+        "description": ""
       },
       "response": []
     }
