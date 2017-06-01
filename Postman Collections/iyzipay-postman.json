@@ -6873,7 +6873,7 @@
               "function()",
               "{});",
               "",
-              "var refund = {",
+              "var postAuth = {",
               "    locale: null,",
               "    conversationId: null,",
               "    paymentTransactionId: null,",
@@ -6962,7 +6962,7 @@
               "    return authorization",
               "}",
               "",
-              "var requestModel = refund;",
+              "var requestModel = postAuth;",
               "requestModel = jsonToObj(request.data, requestModel);",
               "var authorization = generateAuthorizationString(requestModel)",
               "postman.setGlobalVariable(\"authorization\", authorization);",
@@ -6972,7 +6972,7 @@
         }
       ],
       "request": {
-        "url": "{{baseUrl}}/payment/refund",
+        "url": "{{baseUrl}}/payment/postauth",
         "method": "POST",
         "header": [
           {
