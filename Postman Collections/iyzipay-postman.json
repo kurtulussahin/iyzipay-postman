@@ -6811,7 +6811,7 @@
         }
       ],
       "request": {
-        "url": "{{baseUrl}}/payment/auth",
+        "url": "{{baseUrl}}/payment/preauth",
         "method": "POST",
         "header": [
           {
