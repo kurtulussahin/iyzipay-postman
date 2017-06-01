@@ -6992,7 +6992,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"locale\": \"tr\",\n  \"conversationId\": \"123456789\",\n  \"paymentTransactionId\":\"1\",\n  \"price\":\"1.0\",\n  \"currency\":\"TRY\",\n  \"ip\":\"85.34.78.112\"\n}"
+          "raw": "{\n  \"locale\": \"tr\",\n  \"conversationId\": \"123456789\",\n  \"paymentId\":\"1\",\n  \"currency\":\"TRY\",\n  \"ip\":\"85.34.78.112\"\n}"
         },
         "description": ""
       },
