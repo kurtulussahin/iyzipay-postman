@@ -738,7 +738,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"cardUserKey\": \"W2OM/ZUXAn0qCepxpa5Taz89lV0=\",\n    \"card\": {\n        \"cardAlias\": \"card alias\",\n        \"cardNumber\": \"5528790000000008\",\n        \"expireYear\": \"2030\",\n        \"expireMonth\": \"12\",\n        \"cardHolderName\": \"John Doe\"\n    }\n}"
+              "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"cardUserKey\": \"qhY9UynvESX12zaz6cwpMvzccTU=\",\n    \"card\": {\n        \"cardAlias\": \"card alias\",\n        \"cardNumber\": \"4543590000000006\",\n        \"expireYear\": \"2030\",\n        \"expireMonth\": \"12\",\n        \"cardHolderName\": \"John Doe\"\n    }\n}"
             },
             "description": "https://sandbox-api.iyzipay.com/cardstorage/card"
           },
