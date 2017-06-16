@@ -3879,6 +3879,7 @@
                   "    callbackUrl:null,",
                   "    paymentSource:null,",
                   "    currency: null,",
+                  "    posOrderId: null,",
                   "    paidPrice: null,",
                   "    forceThreeDS:null,",
                   "    cardUserKey: null,",
