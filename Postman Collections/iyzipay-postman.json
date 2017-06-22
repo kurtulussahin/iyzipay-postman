@@ -5141,7 +5141,7 @@
           },
           {
             "key": "x-iyzi-rnd",
-            "value": "123456789",
+            "value": "x-iyzi-rnd",
             "description": ""
           },
           {
@@ -5152,7 +5152,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"locale\": \"tr\",\n  \"conversationId\": \"123456789\",\n  \"price\":\"100.0\",\n  \"binNumber\":\"542119\"\n}"
+          "raw": "{\n  \"locale\": \"tr\",\n  \"conversationId\": \"123456789\",\n  \"price\":\"100.0\",\n  \"binNumber\":\"554960\"\n}"
         },
         "description": "Dev Page : https://dev.iyzipay.com/en/api/installment-service"
       },
