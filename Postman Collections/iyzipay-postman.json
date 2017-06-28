@@ -4997,7 +4997,7 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n  \"locale\": \"tr\",\n  \"binNumber\":\"554961\",\n  \"conversationId\": \"123456789\"\n}"
+          "raw": "{\n  \"locale\": \"tr\",\n  \"binNumber\":\"542119\",\n  \"conversationId\": \"123456789\"\n}"
         },
         "description": "https://sandbox-api.iyzipay.com//payment/bin/check"
       },
