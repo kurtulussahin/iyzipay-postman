@@ -1996,7 +1996,6 @@
                   "    paymentChannel: null,",
                   "    basketId: null,",
                   "    paymentGroup: null,",
-                  "    paymentCard: paymentCard,",
                   "    buyer: buyer,",
                   "    shippingAddress: shippingAddress,",
                   "    billingAddress: billingAddress,",
