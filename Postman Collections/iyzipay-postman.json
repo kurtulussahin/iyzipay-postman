@@ -5290,6 +5290,8 @@
               "    currency: null,",
               "    posOrderId:null,",
               "    connectorName: null,",
+              "    callbackUrl: null,",
+              "    softDescriptor:null,",
               "};",
               "",
               "function nullClear(obj){",
