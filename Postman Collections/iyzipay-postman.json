@@ -5693,7 +5693,7 @@
               "    billingAddress: billingAddress,",
               "    basketItems: basketItems,",
               "    currency: null,",
-              "    ",
+              "    callbackUrl: null",
               "};",
               "",
               "function nullClear(obj){",
