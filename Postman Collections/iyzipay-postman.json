@@ -221,29 +221,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/payment/apm/initialize",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"price\": \"1.0\",\n    \"paidPrice\": \"1.2\",\n    \"currency\": \"EUR\",\n    \"countryCode\":\"RU\",\n    \"basketId\": \"B67832\",\n    \"paymentGroup\": \"LISTING\",\n    \"accountHolderName\":\"error\",\n    \"merchantCallbackUrl\":\"https://iyzi-sandbox-kurtulussahin.c9users.io/apmMerchantCallbackUrl.php\",\n    \"merchantErrorUrl\":\"https://iyzi-sandbox-kurtulussahin.c9users.io/apmMerchantErrorUrl.php\",\n    \"merchantNotificationUrl\":\"https://iyzi-sandbox-kurtulussahin.c9users.io/apmMerchantNotificationUrl.php\",\n    \"apmType\":\"QIWI\",\n    \"buyer\": {\n        \"id\": \"BY789\",\n        \"name\": \"John\",\n        \"surname\": \"Doe\",\n        \"identityNumber\": \"74300864791\",\n        \"email\": \"email@email.com\",\n        \"gsmNumber\": \"+905350000000\",\n        \"registrationDate\": \"2013-04-21 15:12:09\",\n        \"lastLoginDate\": \"2015-10-05 12:43:35\",\n        \"registrationAddress\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\",\n        \"zipCode\": \"34732\",\n        \"ip\": \"85.34.78.112\"\n    },\n    \"shippingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"billingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"basketItems\": [\n        {\n            \"id\": \"BI101\",\n            \"price\": \"0.3\",\n            \"name\": \"Binocular\",\n            \"category1\": \"Collectibles\",\n            \"category2\": \"Accessories\",\n            \"itemType\": \"PHYSICAL\"\n        },\n        {\n            \"id\": \"BI102\",\n            \"price\": \"0.5\",\n            \"name\": \"Game code\",\n            \"category1\": \"Game\",\n            \"category2\": \"Online Game Items\",\n            \"itemType\": \"VIRTUAL\"\n        },\n        {\n            \"id\": \"BI103\",\n            \"name\": \"Usb\",\n            \"price\": \"0.2\",\n            \"category1\": \"Electronics\",\n            \"category2\": \"Usb / Cable\",\n            \"itemType\": \"PHYSICAL\"\n        }\n    ]\n}"
             },
+            "url": "{{baseUrl}}/payment/apm/initialize",
             "description": ""
           },
           "response": []
@@ -383,29 +380,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}//payment/apm/retrieve",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"paymentId\": \"42752979\"\n}\n"
             },
+            "url": "{{baseUrl}}//payment/apm/retrieve",
             "description": ""
           },
           "response": []
@@ -618,29 +612,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/payment/bkm/initialize",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"price\": \"1.0\",\n    \"basketId\": \"B67832\",\n    \"paymentGroup\": \"PRODUCT\",\n    \"callbackUrl\": \"https://www.merchant.com/callback\",\n    \"buyer\": {\n        \"id\": \"BY789\",\n        \"name\": \"John\",\n        \"surname\": \"Doe\",\n        \"identityNumber\": \"74300864791\",\n        \"email\": \"email@email.com\",\n        \"gsmNumber\": \"+905350000000\",\n        \"registrationDate\": \"2013-04-21 15:12:09\",\n        \"lastLoginDate\": \"2015-10-05 12:43:35\",\n        \"registrationAddress\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\",\n        \"zipCode\": \"34732\",\n        \"ip\": \"85.34.78.112\"\n    },\n    \"shippingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"billingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"basketItems\": [\n        {\n            \"id\": \"BI101\",\n            \"price\": \"0.3\",\n            \"name\": \"Binocular\",\n            \"category1\": \"Collectibles\",\n            \"category2\": \"Accessories\",\n            \"itemType\": \"PHYSICAL\"\n        },\n        {\n            \"id\": \"BI102\",\n            \"price\": \"0.5\",\n            \"name\": \"Game code\",\n            \"category1\": \"Game\",\n            \"category2\": \"Online Game Items\",\n            \"itemType\": \"VIRTUAL\"\n        },\n        {\n            \"id\": \"BI103\",\n            \"price\": \"0.2\",\n            \"name\": \"Usb\",\n            \"category1\": \"Electronics\",\n            \"category2\": \"Usb / Cable\",\n            \"itemType\": \"PHYSICAL\"\n        }\n    ]\n}"
             },
+            "url": "{{baseUrl}}/payment/bkm/initialize",
             "description": "https://sandbox-api.iyzipay.com/payment/bkm/initialize"
           },
           "response": []
@@ -780,29 +771,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/payment/bkm/auth/detail",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"token\": \"d9a1d90e-7cfb-4ead-a6ec-34237bac04f0\"\n}\n"
             },
+            "url": "{{baseUrl}}/payment/bkm/auth/detail",
             "description": "https://sandbox-api.iyzipay.com//\npayment/bkm/auth/detail"
           },
           "response": []
@@ -955,29 +943,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/cardstorage/card",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"externalId\": \"external id\",\n    \"email\": \"email@email.com\",\n    \"card\": {\n        \"cardAlias\": \"card alias\",\n        \"cardNumber\": \"5528790000000008\",\n        \"expireYear\": \"2030\",\n        \"expireMonth\": \"12\",\n        \"cardHolderName\": \"John Doe\"\n    }\n}"
             },
+            "url": "{{baseUrl}}/cardstorage/card",
             "description": "https://sandbox-api.iyzipay.com/cardstorage/card"
           },
           "response": []
@@ -1122,29 +1107,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/cardstorage/card",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"cardUserKey\": \"nVnB3UJSPM+1eEit/0DyYrwTKec=\",\n    \"card\": {\n        \"cardAlias\": \"card alias\",\n        \"cardNumber\": \"4543590000000006\",\n        \"expireYear\": \"2030\",\n        \"expireMonth\": \"12\",\n        \"cardHolderName\": \"John Doe\"\n    }\n}"
             },
+            "url": "{{baseUrl}}/cardstorage/card",
             "description": "https://sandbox-api.iyzipay.com/cardstorage/card"
           },
           "response": []
@@ -1289,29 +1271,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/cardstorage/card",
             "method": "DELETE",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"cardUserKey\": \"W2OM/ZUXAn0qCepxpa5Taz89lV0=\",\n    \"cardToken\": \"DAx+xnNEwm/4scO+ih7rOsM+4jo=\"\n}"
             },
+            "url": "{{baseUrl}}/cardstorage/card",
             "description": "https://sandbox-api.iyzipay.com/cardstorage/card"
           },
           "response": []
@@ -1456,29 +1435,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/cardstorage/cards",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"cardUserKey\": \"\"\n}"
             },
+            "url": "{{baseUrl}}/cardstorage/cards",
             "description": "https://sandbox-api.iyzipay.com/cardstorage/card"
           },
           "response": []
@@ -1698,29 +1674,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/payment/auth",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"price\": \"1.0\",\n    \"paidPrice\": \"1.1\",\n    \"currency\": \"TRY\",\n    \"installment\": 1,\n    \"paymentChannel\": \"WEB\",\n    \"basketId\": \"B67832\",\n    \"paymentGroup\": \"PRODUCT\",\n    \"paymentCard\": {\n        \"cardUserKey\": \"card user key\",\n        \"cardToken\": \"card token\"\n    },\n    \"buyer\": {\n        \"id\": \"BY789\",\n        \"name\": \"John\",\n        \"surname\": \"Doe\",\n        \"identityNumber\": \"74300864791\",\n        \"email\": \"email@email.com\",\n        \"gsmNumber\": \"+905350000000\",\n        \"registrationDate\": \"2013-04-21 15:12:09\",\n        \"lastLoginDate\": \"2015-10-05 12:43:35\",\n        \"registrationAddress\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\",\n        \"zipCode\": \"34732\",\n        \"ip\": \"85.34.78.112\"\n    },\n    \"shippingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"billingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"basketItems\": [\n        {\n            \"id\": \"BI101\",\n            \"price\": \"0.3\",\n            \"name\": \"Binocular\",\n            \"category1\": \"Collectibles\",\n            \"category2\": \"Accessories\",\n            \"itemType\": \"PHYSICAL\"\n        },\n        {\n            \"id\": \"BI102\",\n            \"price\": \"0.5\",\n            \"name\": \"Game code\",\n            \"category1\": \"Game\",\n            \"category2\": \"Online Game Items\",\n            \"itemType\": \"VIRTUAL\"\n        },\n        {\n            \"id\": \"BI103\",\n            \"price\": \"0.2\",\n            \"name\": \"Usb\",\n            \"category1\": \"Electronics\",\n            \"category2\": \"Usb / Cable\",\n            \"itemType\": \"PHYSICAL\"\n        }\n    ]\n}"
             },
+            "url": "{{baseUrl}}/payment/auth",
             "description": "https://sandbox-api.iyzipay.com/payment/auth"
           },
           "response": []
@@ -1873,29 +1846,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/payment/iyzipos/item/approve",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"paymentTransactionId\": \"1\"\n}"
             },
+            "url": "{{baseUrl}}/payment/iyzipos/item/approve",
             "description": "https://sandbox-api.iyzipay.com/payment/iyzipos/item/approve"
           },
           "response": []
@@ -2035,29 +2005,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/payment/iyzipos/item/disapprove",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"paymentTransactionId\": \"1\"\n}"
             },
+            "url": "{{baseUrl}}/payment/iyzipos/item/disapprove",
             "description": "https://sandbox-api.iyzipay.com/payment/iyzipos/item/disapprove"
           },
           "response": []
@@ -2277,29 +2244,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/payment/auth",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"price\": \"1.0\",\n    \"paidPrice\": \"1.1\",\n    \"currency\": \"TRY\",\n    \"installment\": 1,\n    \"paymentChannel\": \"WEB\",\n    \"basketId\": \"B67832\",\n    \"paymentGroup\": \"PRODUCT\",\n    \"paymentCard\": {\n        \"cardHolderName\": \"John Doe\",\n        \"cardNumber\": \"5528790000000008\",\n        \"expireYear\": \"2030\",\n        \"expireMonth\": \"12\",\n        \"cvc\": \"123\",\n        \"registerCard\": 0\n    },\n    \"buyer\": {\n        \"id\": \"BY789\",\n        \"name\": \"John\",\n        \"surname\": \"Doe\",\n        \"identityNumber\": \"74300864791\",\n        \"email\": \"email@email.com\",\n        \"gsmNumber\": \"+905350000000\",\n        \"registrationDate\": \"2013-04-21 15:12:09\",\n        \"lastLoginDate\": \"2015-10-05 12:43:35\",\n        \"registrationAddress\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\",\n        \"zipCode\": \"34732\",\n        \"ip\": \"85.34.78.112\"\n    },\n    \"shippingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"billingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"basketItems\": [\n        {\n            \"id\": \"BI101\",\n            \"price\": \"0.3\",\n            \"name\": \"Binocular\",\n            \"category1\": \"Collectibles\",\n            \"category2\": \"Accessories\",\n            \"itemType\": \"PHYSICAL\",\n            \"subMerchantKey\":\"DuZbKGwz5pr+uBPlMdG1h5Q3E8=\",\n            \"subMerchantPrice\":\"0.2\"\n        },\n        {\n            \"id\": \"BI102\",\n            \"price\": \"0.5\",\n            \"name\": \"Game code\",\n            \"category1\": \"Game\",\n            \"category2\": \"Online Game Items\",\n            \"itemType\": \"VIRTUAL\",\n            \"subMerchantKey\":\"DuZbKGwz5pr+uBPlMdG1h5Q3E8=\",\n            \"subMerchantPrice\":\"0.3\"\n        },\n        {\n            \"id\": \"BI103\",\n            \"price\": \"0.2\",\n            \"name\": \"Usb\",\n            \"category1\": \"Electronics\",\n            \"category2\": \"Usb / Cable\",\n            \"itemType\": \"PHYSICAL\",\n            \"subMerchantKey\":\"DuZbKGwz5pr+uBPlMdG1h5Q3E8=\",\n            \"subMerchantPrice\":\"0.1\"\n        }\n    ]\n}"
             },
+            "url": "{{baseUrl}}/payment/auth",
             "description": "https://sandbox-api.iyzipay.com/payment/auth"
           },
           "response": []
@@ -2510,29 +2474,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/payment/iyzipos/checkoutform/initialize/auth/ecom",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"price\": \"1.0\",\n    \"paidPrice\": \"1.2\",\n    \"currency\": \"TRY\",\n    \"basketId\": \"B67832\",\n    \"paymentGroup\": \"PRODUCT\",\n    \"callbackUrl\": \"https://www.merchant.com/callback\",\n    \"enabledInstallments\": [\n        1,\n        2,\n        3,\n        6,\n        9\n    ],\n    \"buyer\": {\n        \"id\": \"BY789\",\n        \"name\": \"John\",\n        \"surname\": \"Doe\",\n        \"identityNumber\": \"74300864791\",\n        \"email\": \"email@email.com\",\n        \"gsmNumber\": \"+905350000000\",\n        \"registrationDate\": \"2013-04-21 15:12:09\",\n        \"lastLoginDate\": \"2015-10-05 12:43:35\",\n        \"registrationAddress\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\",\n        \"zipCode\": \"34732\",\n        \"ip\": \"85.34.78.112\"\n    },\n    \"shippingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"billingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"basketItems\": [\n        {\n            \"id\": \"BI101\",\n            \"price\": \"0.3\",\n            \"name\": \"Binocular\",\n            \"category1\": \"Collectibles\",\n            \"category2\": \"Accessories\",\n            \"itemType\": \"PHYSICAL\",\n            \"subMerchantKey\":\"sf6FJV41SFA248sm9c77EAl4iBc=\",\n            \"subMerchantPrice\":\"0.1\"\n        },\n        {\n            \"id\": \"BI102\",\n            \"price\": \"0.5\",\n            \"name\": \"Game code\",\n            \"category1\": \"Game\",\n            \"category2\": \"Online Game Items\",\n            \"itemType\": \"VIRTUAL\",\n            \"subMerchantKey\":\"sf6FJV41SFA248sm9c77EAl4iBc=\",\n            \"subMerchantPrice\":\"0.1\"\n        },\n        {\n            \"id\": \"BI103\",\n            \"name\": \"Usb\",\n            \"price\": \"0.2\",\n            \"category1\": \"Electronics\",\n            \"category2\": \"Usb / Cable\",\n            \"itemType\": \"PHYSICAL\",\n            \"subMerchantKey\":\"sf6FJV41SFA248sm9c77EAl4iBc=\",\n            \"subMerchantPrice\":\"0.1\"\n        }\n    ]\n}"
             },
+            "url": "{{baseUrl}}/payment/iyzipos/checkoutform/initialize/auth/ecom",
             "description": "https://sandbox-api.iyzipay.com/payment/iyzipos/checkoutform/initialize/auth/ecom"
           },
           "response": []
@@ -2687,29 +2648,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/onboarding/submerchant",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"name\": \"John's market\",\n    \"email\": \"email@submerchantemail.com\",\n    \"gsmNumber\": \"+905350000000\",\n    \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n    \"iban\": \"TR180006200119000006672315\",\n    \"contactName\": \"John\",\n    \"contactSurname\": \"Doe\",\n    \"currency\": \"TRY\",\n    \"subMerchantExternalId\": \"B492224\",\n    \"identityNumber\": \"1234567890\",\n    \"subMerchantType\": \"PERSONAL\"\n}"
             },
+            "url": "{{baseUrl}}/onboarding/submerchant",
             "description": "https://sandbox-api.iyzipay.com/onboarding/submerchant"
           },
           "response": []
@@ -2864,29 +2822,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/onboarding/submerchant",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"name\": \"John's market\",\n    \"email\": \"email@submerchantemail.com\",\n    \"gsmNumber\": \"+905350000000\",\n    \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n    \"iban\": \"TR180006200119000006672315\",\n    \"taxOffice\": \"Tax office\",\n    \"legalCompanyTitle\": \"John Doe inc\",\n    \"currency\": \"TRY\",\n    \"subMerchantExternalId\": \"S49222\",\n    \"identityNumber\": \"31300864726\",\n    \"subMerchantType\": \"PRIVATE_COMPANY\"\n}"
             },
+            "url": "{{baseUrl}}/onboarding/submerchant",
             "description": "https://sandbox-api.iyzipay.com/onboarding/submerchant"
           },
           "response": []
@@ -3041,29 +2996,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/onboarding/submerchant",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"name\": \"John's market\",\n    \"email\": \"email@submerchantemail.com\",\n    \"gsmNumber\": \"+905350000000\",\n    \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n    \"iban\": \"TR180006200119000006672315\",\n    \"taxOffice\": \"Tax office\",\n    \"legalCompanyTitle\": \"XYZ inc\",\n    \"currency\": \"TRY\",\n    \"subMerchantExternalId\": \"AS49224\",\n    \"taxNumber\": \"9261877\",\n    \"subMerchantType\": \"LIMITED_OR_JOINT_STOCK_COMPANY\"\n}"
             },
+            "url": "{{baseUrl}}/onboarding/submerchant",
             "description": "https://sandbox-api.iyzipay.com/onboarding/submerchant"
           },
           "response": []
@@ -3217,29 +3169,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/onboarding/submerchant/detail",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"subMerchantExternalId\": \"S49222\"\n}\n"
             },
+            "url": "{{baseUrl}}/onboarding/submerchant/detail",
             "description": "https://sandbox-api.iyzipay.com/onboarding/submerchant/detail"
           },
           "response": []
@@ -3394,29 +3343,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/onboarding/submerchant",
             "method": "PUT",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"name\": \"Jane's market\",\n    \"email\": \"email@submerchantemail.com\",\n    \"gsmNumber\": \"+905350000000\",\n    \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1 \",\n    \"iban\": \"TR630006200027700006678204\",\n    \"contactName\": \"Jane\",\n    \"contactSurname\": \"Doe\",\n    \"currency\": \"TRY\",\n    \"subMerchantKey\": \"ISJcSPg1T2TRCA3e8ErmQK/xntY=\",\n    \"identityNumber\": \"31300864726\"\n}"
             },
+            "url": "{{baseUrl}}/onboarding/submerchant",
             "description": "https://sandbox-api.iyzipay.com/onboarding/submerchant"
           },
           "response": []
@@ -3571,29 +3517,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/onboarding/submerchant",
             "method": "PUT",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"name\": \"Jane's market\",\n    \"email\": \"email@submerchantemail.com\",\n    \"gsmNumber\": \"+905350000000\",\n    \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n    \"iban\": \"TR180006200119000006672315\",\n    \"taxOffice\": \"Tax office\",\n    \"legalCompanyTitle\": \"Jane Doe inc\",\n    \"currency\": \"TRY\",\n    \"subMerchantKey\": \"PPFFZPedVQSvaOqZu5xpvpLEqmc=\",\n    \"identityNumber\": \"31300864726\"\n}"
             },
+            "url": "{{baseUrl}}/onboarding/submerchant",
             "description": "https://sandbox-api.iyzipay.com/onboarding/submerchant"
           },
           "response": []
@@ -3748,29 +3691,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/onboarding/submerchant",
             "method": "PUT",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"name\": \"Jane's market\",\n    \"email\": \"email@submerchantemail.com\",\n    \"gsmNumber\": \"+905350000000\",\n    \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n    \"iban\": \"TR180006200119000006672315\",\n    \"taxOffice\": \"Tax office\",\n    \"legalCompanyTitle\": \"ABC inc\",\n    \"currency\": \"TRY\",\n    \"subMerchantKey\": \"jsLbNEUu8XOKyxLdqqqqHUuu9bQ=\",\n    \"taxNumber\": \"9261877\"\n}"
             },
+            "url": "{{baseUrl}}/onboarding/submerchant",
             "description": "https://sandbox-api.iyzipay.com/onboarding/submerchant"
           },
           "response": []
@@ -3982,29 +3922,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/payment/pecco/initialize",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"price\": \"1.0\",\n    \"paidPrice\":\"1.2\",\n    \"basketId\": \"B67832\",\n    \"paymentGroup\": \"PRODUCT\",\n    \"callbackUrl\": \"https://www.merchant.com/callback\",\n    \"buyer\": {\n        \"id\": \"BY789\",\n        \"name\": \"John\",\n        \"surname\": \"Doe\",\n        \"identityNumber\": \"74300864791\",\n        \"email\": \"email@email.com\",\n        \"gsmNumber\": \"+905350000000\",\n        \"registrationDate\": \"2013-04-21 15:12:09\",\n        \"lastLoginDate\": \"2015-10-05 12:43:35\",\n        \"registrationAddress\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\",\n        \"zipCode\": \"34732\",\n        \"ip\": \"85.34.78.112\"\n    },\n    \"shippingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"billingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"basketItems\": [\n        {\n            \"id\": \"BI101\",\n            \"price\": \"0.3\",\n            \"name\": \"Binocular\",\n            \"category1\": \"Collectibles\",\n            \"category2\": \"Accessories\",\n            \"itemType\": \"PHYSICAL\"\n        },\n        {\n            \"id\": \"BI102\",\n            \"price\": \"0.5\",\n            \"name\": \"Game code\",\n            \"category1\": \"Game\",\n            \"category2\": \"Online Game Items\",\n            \"itemType\": \"VIRTUAL\"\n        },\n        {\n            \"id\": \"BI103\",\n            \"price\": \"0.2\",\n            \"name\": \"Usb\",\n            \"category1\": \"Electronics\",\n            \"category2\": \"Usb / Cable\",\n            \"itemType\": \"PHYSICAL\"\n        }\n    ]\n}"
             },
+            "url": "{{baseUrl}}/payment/pecco/initialize",
             "description": "https://sandbox-api.iyzipay.com/payment/pecco/initialize"
           },
           "response": []
@@ -4144,29 +4081,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/payment/pecco/auth",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"token\": \"d9a1d90e-7cfb-4ead-a6ec-34237bac04f0\"\n}\n"
             },
+            "url": "{{baseUrl}}/payment/pecco/auth",
             "description": "https://sandbox-api.iyzipay.com/payment/pecco/auth"
           },
           "response": []
@@ -4388,29 +4322,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/payment/iyzipos/checkoutform/initialize/auth/ecom",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"price\": \"1.0\",\n    \"paidPrice\": \"1.2\",\n    \"currency\": \"TRY\",\n    \"basketId\": \"B67832\",\n    \"paymentGroup\": \"LISTING\",\n    \"forceThreeDS\":0,\n    \"callbackUrl\": \"https://www.merchant.com/callback\",\n    \"paymentWithNewCardEnabled\": \"true\",\n    \"enabledInstallments\": [\n        1,\n        2,\n        3,\n        6,\n        9,\n        12\n    ],\n    \"buyer\": {\n        \"id\": \"BY789\",\n        \"name\": \"John\",\n        \"surname\": \"Doe\",\n        \"identityNumber\": \"74300864791\",\n        \"email\": \"Email@email.com\",\n        \"gsmNumber\": \"+905350000000\",\n        \"registrationDate\": \"2013-04-21 15:12:09\",\n        \"lastLoginDate\": \"2015-10-05 12:43:35\",\n        \"registrationAddress\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\",\n        \"zipCode\": \"34732\",\n        \"ip\": \"85.34.78.112\"\n    },\n    \"shippingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"billingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"basketItems\": [\n        {\n            \"id\": \"BI101\",\n            \"price\": \"0.3\",\n            \"name\": \"Binocular\",\n            \"category1\": \"Collectibles\",\n            \"category2\": \"Accessories\",\n            \"itemType\": \"PHYSICAL\"\n        },\n        {\n            \"id\": \"BI102\",\n            \"price\": \"0.5\",\n            \"name\": \"Game code\",\n            \"category1\": \"Game\",\n            \"category2\": \"Online Game Items\",\n            \"itemType\": \"VIRTUAL\"\n        },\n        {\n            \"id\": \"BI103\",\n            \"name\": \"Usb\",\n            \"price\": \"0.2\",\n            \"category1\": \"Electronics\",\n            \"category2\": \"Usb / Cable\",\n            \"itemType\": \"PHYSICAL\"\n        }\n    ]\n}"
             },
+            "url": "{{baseUrl}}/payment/iyzipos/checkoutform/initialize/auth/ecom",
             "description": "Dev Page : https://dev.iyzipay.com/en/checkout-form/initialize"
           },
           "response": []
@@ -4550,29 +4481,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/payment/iyzipos/checkoutform/auth/ecom/detail",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"token\": \"d9a1d90e-7cfb-4ead-a6ec-34237bac04f0\"\n}\n"
             },
+            "url": "{{baseUrl}}/payment/iyzipos/checkoutform/auth/ecom/detail",
             "description": "Dev Page : https://dev.iyzipay.com/en/checkout-form/retrieve"
           },
           "response": []
@@ -4786,29 +4714,26 @@
             }
           ],
           "request": {
-            "url": "{{baseUrl}}/payment/iyzipos/checkoutform/initialize/auth/ecom",
             "method": "POST",
             "header": [
               {
                 "key": "Authorization",
-                "value": "{{authorization}}",
-                "description": ""
+                "value": "{{authorization}}"
               },
               {
                 "key": "x-iyzi-rnd",
-                "value": "123456789",
-                "description": ""
+                "value": "123456789"
               },
               {
                 "key": "Content-Type",
-                "value": "application/json",
-                "description": ""
+                "value": "application/json"
               }
             ],
             "body": {
               "mode": "raw",
               "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"price\": \"1.0\",\n    \"paidPrice\": \"1.2\",\n    \"basketId\": \"B67832\",\n    \"paymentGroup\": \"PRODUCT\",\n    \"cardUserKey\": \"card user key\",\n    \"callbackUrl\": \"https://www.merchant.com/callback\",\n    \"enabledInstallments\": [\n        1,\n        2,\n        3,\n        6,\n        9,\n        12\n    ],\n    \"buyer\": {\n        \"id\": \"BY789\",\n        \"name\": \"John\",\n        \"surname\": \"Doe\",\n        \"identityNumber\": \"74300864791\",\n        \"email\": \"email@email.com\",\n        \"gsmNumber\": \"+905350000000\",\n        \"registrationDate\": \"2013-04-21 15:12:09\",\n        \"lastLoginDate\": \"2015-10-05 12:43:35\",\n        \"registrationAddress\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\",\n        \"zipCode\": \"34732\",\n        \"ip\": \"85.34.78.112\"\n    },\n    \"shippingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"billingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"basketItems\": [\n        {\n            \"id\": \"BI101\",\n            \"price\": \"0.3\",\n            \"name\": \"Binocular\",\n            \"category1\": \"Collectibles\",\n            \"category2\": \"Accessories\",\n            \"itemType\": \"PHYSICAL\"\n        },\n        {\n            \"id\": \"BI102\",\n            \"price\": \"0.5\",\n            \"name\": \"Game code\",\n            \"category1\": \"Game\",\n            \"category2\": \"Online Game Items\",\n            \"itemType\": \"VIRTUAL\"\n        },\n        {\n            \"id\": \"BI103\",\n            \"name\": \"Usb\",\n            \"price\": \"0.2\",\n            \"category1\": \"Electronics\",\n            \"category2\": \"Usb / Cable\",\n            \"itemType\": \"PHYSICAL\"\n        }\n    ]\n}"
             },
+            "url": "{{baseUrl}}/payment/iyzipos/checkoutform/initialize/auth/ecom",
             "description": "https://sandbox-api.iyzipay.com/payment/iyzipos/checkoutform/initialize/auth/ecom"
           },
           "response": []
@@ -4831,13 +4756,13 @@
         }
       ],
       "request": {
-        "url": "{{baseUrl}}/payment/test",
         "method": "GET",
         "header": [],
         "body": {
           "mode": "raw",
           "raw": ""
         },
+        "url": "{{baseUrl}}/payment/test",
         "description": "https://sandbox-api.iyzipay.com/payment/test"
       },
       "response": []
@@ -4978,29 +4903,26 @@
         }
       ],
       "request": {
-        "url": "{{baseUrl}}/payment/bin/check",
         "method": "POST",
         "header": [
           {
             "key": "Authorization",
-            "value": "{{authorization}}",
-            "description": ""
+            "value": "{{authorization}}"
           },
           {
             "key": "x-iyzi-rnd",
-            "value": "x-iyzi-rnd",
-            "description": ""
+            "value": "x-iyzi-rnd"
           },
           {
             "key": "Content-Type",
-            "value": "application/json",
-            "description": ""
+            "value": "application/json"
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\n  \"locale\": \"tr\",\n  \"binNumber\":\"542119\",\n  \"conversationId\": \"123456789\"\n}"
         },
+        "url": "{{baseUrl}}/payment/bin/check",
         "description": "https://sandbox-api.iyzipay.com//payment/bin/check"
       },
       "response": []
@@ -5139,29 +5061,26 @@
         }
       ],
       "request": {
-        "url": "{{baseUrl}}/payment/iyzipos/installment",
         "method": "POST",
         "header": [
           {
             "key": "Authorization",
-            "value": "{{authorization}}",
-            "description": ""
+            "value": "{{authorization}}"
           },
           {
             "key": "x-iyzi-rnd",
-            "value": "x-iyzi-rnd",
-            "description": ""
+            "value": "x-iyzi-rnd"
           },
           {
             "key": "Content-Type",
-            "value": "application/json",
-            "description": ""
+            "value": "application/json"
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\n  \"locale\": \"tr\",\n  \"conversationId\": \"123456789\",\n  \"price\":\"100.0\",\n  \"binNumber\":\"554960\"\n}"
         },
+        "url": "{{baseUrl}}/payment/iyzipos/installment",
         "description": "Dev Page : https://dev.iyzipay.com/en/api/installment-service"
       },
       "response": []
@@ -5387,29 +5306,26 @@
         }
       ],
       "request": {
-        "url": "{{baseUrl}}/payment/auth",
         "method": "POST",
         "header": [
           {
             "key": "Authorization",
-            "value": "{{authorization}}",
-            "description": ""
+            "value": "{{authorization}}"
           },
           {
             "key": "x-iyzi-rnd",
-            "value": "x-iyzi-rnd",
-            "description": ""
+            "value": "x-iyzi-rnd"
           },
           {
             "key": "Content-Type",
-            "value": "application/json",
-            "description": ""
+            "value": "application/json"
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\n    \"locale\": \"TR\",\n    \"conversationId\": \"123456789\",\n    \"price\": \"1.0\",\n    \"paidPrice\": \"1.5\",\n    \"currency\": \"TRY\",\n    \"installment\": 1,\n    \"paymentChannel\": \"WEB\",\n    \"basketId\": \"B67832\",\n    \"paymentGroup\": \"LISTING\",\n    \"paymentCard\": {\n        \"cardHolderName\": \"John Doe\",\n        \"cardNumber\": \"5400360000000003\",\n        \"expireYear\": \"2021\",\n        \"expireMonth\": \"01\",\n        \"cvc\": \"123\",\n        \"registerCard\": 0\n    },\n    \"buyer\": {\n        \"id\": \"BY789\",\n        \"name\": \"John\",\n        \"surname\": \"Doe\",\n        \"identityNumber\": \"74300864791\",\n        \"email\": \"email@email.com\",\n        \"gsmNumber\": \"+905350000000\",\n        \"registrationDate\": \"2013-04-21 15:12:09\",\n        \"lastLoginDate\": \"2015-10-05 12:43:35\",\n        \"registrationAddress\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\",\n        \"zipCode\": \"34732\",\n        \"ip\": \"85.34.78.112\"\n    },\n    \"shippingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"billingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"basketItems\": [\n        {\n            \"id\": \"BI101\",\n            \"price\": \"0.3\",\n            \"name\": \"Binocular\",\n            \"category1\": \"Collectibles\",\n            \"category2\": \"Accessories\",\n            \"itemType\": \"PHYSICAL\"\n        },\n        {\n            \"id\": \"BI102\",\n            \"price\": \"0.5\",\n            \"name\": \"Game code\",\n            \"category1\": \"Game\",\n            \"category2\": \"Online Game Items\",\n            \"itemType\": \"VIRTUAL\"\n        },\n        {\n            \"id\": \"BI103\",\n            \"price\": \"0.2\",\n            \"name\": \"Usb\",\n            \"category1\": \"Electronics\",\n            \"category2\": \"Usb / Cable\",\n            \"itemType\": \"PHYSICAL\"\n        }\n    ]\n}"
         },
+        "url": "{{baseUrl}}/payment/auth",
         "description": "Dev Page : https://dev.iyzipay.com/en/api/auth"
       },
       "response": []
@@ -5546,29 +5462,26 @@
         }
       ],
       "request": {
-        "url": "{{baseUrl}}/payment/3dsecure/auth",
         "method": "POST",
         "header": [
           {
             "key": "Authorization",
-            "value": "{{authorization}}",
-            "description": ""
+            "value": "{{authorization}}"
           },
           {
             "key": "x-iyzi-rnd",
-            "value": "123456789",
-            "description": ""
+            "value": "123456789"
           },
           {
             "key": "Content-Type",
-            "value": "application/json",
-            "description": ""
+            "value": "application/json"
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\n  \"locale\": \"tr\",\n  \"conversationId\": \"123456789\",\n  \"paymentId\": \"309287\",\n  \"conversationData\":\"\"\n}"
         },
+        "url": "{{baseUrl}}/payment/3dsecure/auth",
         "description": "Dev Page : https://dev.iyzipay.com/en/api/auth-with-3d"
       },
       "response": []
@@ -5788,29 +5701,26 @@
         }
       ],
       "request": {
-        "url": "{{baseUrl}}/payment/3dsecure/initialize",
         "method": "POST",
         "header": [
           {
             "key": "Authorization",
-            "value": "{{authorization}}",
-            "description": ""
+            "value": "{{authorization}}"
           },
           {
             "key": "x-iyzi-rnd",
-            "value": "123456789",
-            "description": ""
+            "value": "123456789"
           },
           {
             "key": "Content-Type",
-            "value": "application/json",
-            "description": ""
+            "value": "application/json"
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\n    \"locale\": \"tr\",\n    \"conversationId\": \"123456789\",\n    \"price\": \"1.0\",\n    \"paidPrice\": \"1.2\",\n    \"currency\": \"TRY\",\n    \"installment\": 1,\n    \"paymentChannel\": \"WEB\",\n    \"basketId\": \"B67832\",\n    \"paymentGroup\": \"PRODUCT\",\n    \"callbackUrl\": \"https://www.iyzico.com/deneme\",\n    \"paymentCard\": {\n        \"cardHolderName\": \"John Doe\",\n        \"cardNumber\": \"5528790000000008\",\n        \"expireYear\": \"2030\",\n        \"expireMonth\": \"12\",\n        \"cvc\": \"123\"\n    },\n    \"buyer\": {\n        \"id\": \"BY789\",\n        \"name\": \"John\",\n        \"surname\": \"Doe\",\n        \"identityNumber\": \"74300864791\",\n        \"email\": \"email@email.com\",\n        \"gsmNumber\": \"+905350000000\",\n        \"registrationDate\": \"2013-04-21 15:12:09\",\n        \"lastLoginDate\": \"2015-10-05 12:43:35\",\n        \"registrationAddress\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\",\n        \"zipCode\": \"34732\",\n        \"ip\": \"85.34.78.112\"\n    },\n    \"shippingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"billingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"basketItems\": [\n        {\n            \"id\": \"BI101\",\n            \"price\": \"0.3\",\n            \"name\": \"Binocular\",\n            \"category1\": \"Collectibles\",\n            \"category2\": \"Accessories\",\n            \"itemType\": \"PHYSICAL\"\n        },\n        {\n            \"id\": \"BI102\",\n            \"price\": \"0.5\",\n            \"name\": \"Game code\",\n            \"category1\": \"Game\",\n            \"category2\": \"Online Game Items\",\n            \"itemType\": \"VIRTUAL\"\n        },\n        {\n            \"id\": \"BI103\",\n            \"price\": \"0.2\",\n            \"name\": \"Usb\",\n            \"category1\": \"Electronics\",\n            \"category2\": \"Usb / Cable\",\n            \"itemType\": \"PHYSICAL\"\n        }\n    ]\n}"
         },
+        "url": "{{baseUrl}}/payment/3dsecure/initialize",
         "description": "Dev Page : https://dev.iyzipay.com/en/api/auth-with-3d"
       },
       "response": []
@@ -5947,29 +5857,26 @@
         }
       ],
       "request": {
-        "url": "{{baseUrl}}/payment/cancel",
         "method": "POST",
         "header": [
           {
             "key": "Authorization",
-            "value": "{{authorization}}",
-            "description": ""
+            "value": "{{authorization}}"
           },
           {
             "key": "x-iyzi-rnd",
-            "value": "123456789",
-            "description": ""
+            "value": "123456789"
           },
           {
             "key": "Content-Type",
-            "value": "application/json",
-            "description": ""
+            "value": "application/json"
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\n  \"locale\": \"tr\",\n  \"conversationId\": \"123456789\",\n  \"paymentId\":\"1\",\n  \"ip\":\"85.34.78.112\"\n}"
         },
+        "url": "{{baseUrl}}/payment/cancel",
         "description": "Dev Page : https://dev.iyzipay.com/en/api/cancel"
       },
       "response": []
@@ -6108,29 +6015,26 @@
         }
       ],
       "request": {
-        "url": "{{baseUrl}}/payment/refund",
         "method": "POST",
         "header": [
           {
             "key": "Authorization",
-            "value": "{{authorization}}",
-            "description": ""
+            "value": "{{authorization}}"
           },
           {
             "key": "x-iyzi-rnd",
-            "value": "123456789",
-            "description": ""
+            "value": "123456789"
           },
           {
             "key": "Content-Type",
-            "value": "application/json",
-            "description": ""
+            "value": "application/json"
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\n  \"locale\": \"tr\",\n  \"conversationId\": \"123456789\",\n  \"paymentTransactionId\":\"1\",\n  \"price\":\"1.0\",\n  \"currency\":\"TRY\",\n  \"ip\":\"85.34.78.112\"\n}"
         },
+        "url": "{{baseUrl}}/payment/refund",
         "description": "Dev Page : https://dev.iyzipay.com/en/api/refund"
       },
       "response": []
@@ -6267,29 +6171,26 @@
         }
       ],
       "request": {
-        "url": "{{baseUrl}}/payment/detail",
         "method": "POST",
         "header": [
           {
             "key": "Authorization",
-            "value": "{{authorization}}",
-            "description": ""
+            "value": "{{authorization}}"
           },
           {
             "key": "x-iyzi-rnd",
-            "value": "123456789",
-            "description": ""
+            "value": "123456789"
           },
           {
             "key": "Content-Type",
-            "value": "application/json",
-            "description": ""
+            "value": "application/json"
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\n  \"locale\": \"tr\",\n  \"conversationId\": \"123456789\",\n  \"paymentId\": \"1\",\n  \"paymentConversationId\":\"123456789\"\n}"
         },
+        "url": "{{baseUrl}}/payment/detail",
         "description": ""
       },
       "response": []
@@ -6425,29 +6326,26 @@
         }
       ],
       "request": {
-        "url": "{{baseUrl}}/reporting/settlement/payoutcompleted",
         "method": "POST",
         "header": [
           {
             "key": "Authorization",
-            "value": "{{authorization}}",
-            "description": ""
+            "value": "{{authorization}}"
           },
           {
             "key": "x-iyzi-rnd",
-            "value": "123456789",
-            "description": ""
+            "value": "123456789"
           },
           {
             "key": "Content-Type",
-            "value": "application/json",
-            "description": ""
+            "value": "application/json"
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\n  \"locale\": \"tr\",\n  \"conversationId\": \"123456789\",\n  \"date\": \"2016-01-22 19:13:00\"\n}"
         },
+        "url": "{{baseUrl}}/reporting/settlement/payoutcompleted",
         "description": "https://sandbox-api.iyzipay.com/reporting/settlement/payoutcompleted"
       },
       "response": []
@@ -6583,29 +6481,26 @@
         }
       ],
       "request": {
-        "url": "{{baseUrl}}/reporting/settlement/payoutcompleted",
         "method": "POST",
         "header": [
           {
             "key": "Authorization",
-            "value": "{{authorization}}",
-            "description": ""
+            "value": "{{authorization}}"
           },
           {
             "key": "x-iyzi-rnd",
-            "value": "123456789",
-            "description": ""
+            "value": "123456789"
           },
           {
             "key": "Content-Type",
-            "value": "application/json",
-            "description": ""
+            "value": "application/json"
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\n  \"locale\": \"tr\",\n  \"conversationId\": \"123456789\",\n  \"date\": \"2016-01-22 19:13:00\"\n}"
         },
+        "url": "{{baseUrl}}/reporting/settlement/payoutcompleted",
         "description": "https://sandbox-api.iyzipay.com/reporting/settlement/bounced"
       },
       "response": []
@@ -6826,29 +6721,26 @@
         }
       ],
       "request": {
-        "url": "{{baseUrl}}/payment/preauth",
         "method": "POST",
         "header": [
           {
             "key": "Authorization",
-            "value": "{{authorization}}",
-            "description": ""
+            "value": "{{authorization}}"
           },
           {
             "key": "x-iyzi-rnd",
-            "value": "123456789",
-            "description": ""
+            "value": "123456789"
           },
           {
             "key": "Content-Type",
-            "value": "application/json",
-            "description": ""
+            "value": "application/json"
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\n    \"locale\": \"TR\",\n    \"conversationId\": \"123456789\",\n    \"price\": \"1.0\",\n    \"paidPrice\": \"6.0\",\n    \"currency\": \"TRY\",\n    \"installment\": 2,\n    \"paymentChannel\": \"WEB\",\n    \"basketId\": \"B67832\",\n    \"paymentGroup\": \"LISTING\",\n    \"paymentCard\": {\n        \"cardHolderName\": \"John Doe\",\n        \"cardNumber\": \"5209327064901890\",\n        \"expireYear\": \"2021\",\n        \"expireMonth\": \"01\",\n        \"cvc\": \"038\",\n        \"registerCard\": 0\n    },\n    \"buyer\": {\n        \"id\": \"BY789\",\n        \"name\": \"John\",\n        \"surname\": \"Doe\",\n        \"identityNumber\": \"74300864791\",\n        \"email\": \"email@email.com\",\n        \"gsmNumber\": \"+905350000000\",\n        \"registrationDate\": \"2013-04-21 15:12:09\",\n        \"lastLoginDate\": \"2015-10-05 12:43:35\",\n        \"registrationAddress\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\",\n        \"zipCode\": \"34732\",\n        \"ip\": \"85.34.78.112\"\n    },\n    \"shippingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \"zipCode\": \"34742\",\n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"billingAddress\": {\n        \"address\": \"Nidakule Göztepe, Merdivenköy Mah. Bora Sok. No:1\",\n        \n        \"contactName\": \"Jane Doe\",\n        \"city\": \"Istanbul\",\n        \"country\": \"Turkey\"\n    },\n    \"basketItems\": [\n        {\n            \"id\": \"BI101\",\n            \"price\": \"0.3\",\n            \"name\": \"Binocular\",\n            \"category1\": \"Collectibles\",\n            \"category2\": \"Accessories\",\n            \"itemType\": \"PHYSICAL\"\n        },\n        {\n            \"id\": \"BI102\",\n            \"price\": \"0.5\",\n            \"name\": \"Game code\",\n            \"category1\": \"Game\",\n            \"category2\": \"Online Game Items\",\n            \"itemType\": \"VIRTUAL\"\n        },\n        {\n            \"id\": \"BI103\",\n            \"price\": \"0.2\",\n            \"name\": \"Usb\",\n            \"category1\": \"Electronics\",\n            \"category2\": \"Usb / Cable\",\n            \"itemType\": \"PHYSICAL\"\n        }\n    ]\n}"
         },
+        "url": "{{baseUrl}}/payment/preauth",
         "description": ""
       },
       "response": []
@@ -6986,29 +6878,26 @@
         }
       ],
       "request": {
-        "url": "{{baseUrl}}/payment/postauth",
         "method": "POST",
         "header": [
           {
             "key": "Authorization",
-            "value": "{{authorization}}",
-            "description": ""
+            "value": "{{authorization}}"
           },
           {
             "key": "x-iyzi-rnd",
-            "value": "123456789",
-            "description": ""
+            "value": "123456789"
           },
           {
             "key": "Content-Type",
-            "value": "application/json",
-            "description": ""
+            "value": "application/json"
           }
         ],
         "body": {
           "mode": "raw",
           "raw": "{\n  \"locale\": \"tr\",\n  \"conversationId\": \"123456789\",\n  \"paymentId\":\"1\",\n  \"currency\":\"TRY\",\n  \"ip\":\"85.34.78.112\"\n}"
         },
+        "url": "{{baseUrl}}/payment/postauth",
         "description": ""
       },
       "response": []
