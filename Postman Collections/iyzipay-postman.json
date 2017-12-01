@@ -1,5 +1,4 @@
 {
-  "variables": [],
   "info": {
     "name": "iyzipay-postman",
     "_postman_id": "826c2f08-2da5-20b7-633a-aca16410d757",
@@ -16,24 +15,6 @@
           "_postman_id": "b09f5815-e303-8660-3241-1536f1baaf4a",
           "name": "Initialize APM",
           "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
             {
               "listen": "prerequest",
               "script": {
@@ -218,6 +199,24 @@
                   ""
                 ]
               }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
             }
           ],
           "request": {
@@ -249,24 +248,6 @@
           "_postman_id": "5430ee57-ca16-74cc-b664-fb0afff3773e",
           "name": "Retrieve Apm",
           "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
             {
               "listen": "prerequest",
               "script": {
@@ -377,6 +358,24 @@
                   ""
                 ]
               }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
             }
           ],
           "request": {
@@ -415,24 +414,6 @@
           "_postman_id": "3a517a27-7a12-1207-ea71-32c9e9228d72",
           "name": "Initialize Bkm",
           "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
             {
               "listen": "prerequest",
               "script": {
@@ -609,6 +590,24 @@
                   ""
                 ]
               }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
             }
           ],
           "request": {
@@ -640,24 +639,6 @@
           "_postman_id": "e292657d-a792-6af8-aff9-9db210c77b60",
           "name": "Retrieve Bkm Result",
           "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
             {
               "listen": "prerequest",
               "script": {
@@ -768,6 +749,24 @@
                   ""
                 ]
               }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
             }
           ],
           "request": {
@@ -806,20 +805,6 @@
           "_postman_id": "5a33ae4e-7e4e-fc4e-a7da-7aed5bbb021a",
           "name": "Create User And Add Card",
           "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true"
-                ]
-              }
-            },
             {
               "listen": "prerequest",
               "script": {
@@ -940,6 +925,20 @@
                   ""
                 ]
               }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true"
+                ]
+              }
             }
           ],
           "request": {
@@ -971,20 +970,6 @@
           "_postman_id": "3a815d57-f4e9-8386-a8ad-8250e8624d2e",
           "name": "Create Card",
           "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true"
-                ]
-              }
-            },
             {
               "listen": "prerequest",
               "script": {
@@ -1102,6 +1087,20 @@
                   "requestModel = jsonToObj(request.data, requestModel);",
                   "var authorization = generateAuthorizationString(requestModel)",
                   "postman.setGlobalVariable(\"authorization\", authorization);"
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true"
                 ]
               }
             }
@@ -1136,20 +1135,6 @@
           "name": "Delete Card",
           "event": [
             {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true"
-                ]
-              }
-            },
-            {
               "listen": "prerequest",
               "script": {
                 "type": "text/javascript",
@@ -1266,6 +1251,20 @@
                   "requestModel = jsonToObj(request.data, requestModel);",
                   "var authorization = generateAuthorizationString(requestModel)",
                   "postman.setGlobalVariable(\"authorization\", authorization);"
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true"
                 ]
               }
             }
@@ -1300,20 +1299,6 @@
           "name": "Retrieve Cards",
           "event": [
             {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true"
-                ]
-              }
-            },
-            {
               "listen": "prerequest",
               "script": {
                 "type": "text/javascript",
@@ -1432,6 +1417,20 @@
                   "postman.setGlobalVariable(\"authorization\", authorization);"
                 ]
               }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true"
+                ]
+              }
             }
           ],
           "request": {
@@ -1463,24 +1462,6 @@
           "_postman_id": "2123adc5-eb9c-6052-374d-913b50f8cf66",
           "name": "Create Payment with Registered card",
           "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
             {
               "listen": "prerequest",
               "script": {
@@ -1668,6 +1649,24 @@
                   "requestModel = jsonToObj(request.data, requestModel);",
                   "var authorization = generateAuthorizationString(requestModel)",
                   "postman.setGlobalVariable(\"authorization\", authorization);",
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
                   ""
                 ]
               }
@@ -1716,24 +1715,6 @@
           "name": "Approve Payment",
           "event": [
             {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
-            {
               "listen": "prerequest",
               "script": {
                 "type": "text/javascript",
@@ -1840,6 +1821,24 @@
                   "requestModel = jsonToObj(request.data, requestModel);",
                   "var authorization = generateAuthorizationString(requestModel)",
                   "postman.setGlobalVariable(\"authorization\", authorization);",
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
                   ""
                 ]
               }
@@ -1875,24 +1874,6 @@
           "name": "Disapprove Payment",
           "event": [
             {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
-            {
               "listen": "prerequest",
               "script": {
                 "type": "text/javascript",
@@ -2002,6 +1983,24 @@
                   ""
                 ]
               }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
             }
           ],
           "request": {
@@ -2033,24 +2032,6 @@
           "_postman_id": "1061f44a-eb74-8260-3dee-10b5a85a4a33",
           "name": "Create Marketplace Payment",
           "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
             {
               "listen": "prerequest",
               "script": {
@@ -2241,6 +2222,24 @@
                   ""
                 ]
               }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
             }
           ],
           "request": {
@@ -2272,24 +2271,6 @@
           "_postman_id": "91f6ca4a-4975-a218-5d59-2938d48a268b",
           "name": "Initialize Marketplace Checkout",
           "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
             {
               "listen": "prerequest",
               "script": {
@@ -2471,6 +2452,24 @@
                   ""
                 ]
               }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
             }
           ],
           "request": {
@@ -2502,24 +2501,6 @@
           "_postman_id": "01fbba4e-10bb-5ac6-e744-daa7db39d57d",
           "name": "Create Personal Submerchant",
           "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
             {
               "listen": "prerequest",
               "script": {
@@ -2642,6 +2623,24 @@
                   "requestModel = jsonToObj(request.data, requestModel);",
                   "var authorization = generateAuthorizationString(requestModel)",
                   "postman.setGlobalVariable(\"authorization\", authorization);",
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
                   ""
                 ]
               }
@@ -2677,24 +2676,6 @@
           "name": "Create Private Submerchant",
           "event": [
             {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
-            {
               "listen": "prerequest",
               "script": {
                 "type": "text/javascript",
@@ -2816,6 +2797,24 @@
                   "requestModel = jsonToObj(request.data, requestModel);",
                   "var authorization = generateAuthorizationString(requestModel)",
                   "postman.setGlobalVariable(\"authorization\", authorization);",
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
                   ""
                 ]
               }
@@ -2851,24 +2850,6 @@
           "name": "Create Company Submerchant",
           "event": [
             {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
-            {
               "listen": "prerequest",
               "script": {
                 "type": "text/javascript",
@@ -2990,6 +2971,24 @@
                   "requestModel = jsonToObj(request.data, requestModel);",
                   "var authorization = generateAuthorizationString(requestModel)",
                   "postman.setGlobalVariable(\"authorization\", authorization);",
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
                   ""
                 ]
               }
@@ -3025,24 +3024,6 @@
           "name": "Retrieve Submerchant",
           "event": [
             {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
-            {
               "listen": "prerequest",
               "script": {
                 "type": "text/javascript",
@@ -3163,6 +3144,24 @@
                   "requestModel = jsonToObj(request.data, requestModel);",
                   "var authorization = generateAuthorizationString(requestModel)",
                   "postman.setGlobalVariable(\"authorization\", authorization);",
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
                   ""
                 ]
               }
@@ -3198,24 +3197,6 @@
           "name": "Update Personal Submerchant copy",
           "event": [
             {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
-            {
               "listen": "prerequest",
               "script": {
                 "type": "text/javascript",
@@ -3337,6 +3318,24 @@
                   "requestModel = jsonToObj(request.data, requestModel);",
                   "var authorization = generateAuthorizationString(requestModel)",
                   "postman.setGlobalVariable(\"authorization\", authorization);",
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
                   ""
                 ]
               }
@@ -3372,24 +3371,6 @@
           "name": "Update Private Submerchant",
           "event": [
             {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
-            {
               "listen": "prerequest",
               "script": {
                 "type": "text/javascript",
@@ -3511,6 +3492,24 @@
                   "requestModel = jsonToObj(request.data, requestModel);",
                   "var authorization = generateAuthorizationString(requestModel)",
                   "postman.setGlobalVariable(\"authorization\", authorization);",
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
                   ""
                 ]
               }
@@ -3546,24 +3545,6 @@
           "name": "Update Company Submerchant",
           "event": [
             {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
-            {
               "listen": "prerequest",
               "script": {
                 "type": "text/javascript",
@@ -3685,6 +3666,24 @@
                   "requestModel = jsonToObj(request.data, requestModel);",
                   "var authorization = generateAuthorizationString(requestModel)",
                   "postman.setGlobalVariable(\"authorization\", authorization);",
+                  ""
+                ]
+              }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
                   ""
                 ]
               }
@@ -3726,24 +3725,6 @@
           "_postman_id": "3be93753-17df-2e59-a59a-df4d1d90f4b4",
           "name": "Initialize Pecco",
           "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
             {
               "listen": "prerequest",
               "script": {
@@ -3919,6 +3900,24 @@
                   ""
                 ]
               }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
             }
           ],
           "request": {
@@ -3950,24 +3949,6 @@
           "_postman_id": "6752aa4e-40ad-6e67-7969-5514bccbe8d0",
           "name": "Create Pecco",
           "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
             {
               "listen": "prerequest",
               "script": {
@@ -4078,6 +4059,24 @@
                   ""
                 ]
               }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
             }
           ],
           "request": {
@@ -4116,24 +4115,6 @@
           "_postman_id": "ea4ebb8c-9ec2-02c0-0c33-705196e4d413",
           "name": "Initialize Checkout",
           "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
             {
               "listen": "prerequest",
               "script": {
@@ -4319,6 +4300,24 @@
                   ""
                 ]
               }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
             }
           ],
           "request": {
@@ -4350,24 +4349,6 @@
           "_postman_id": "ce72ad76-94e5-a783-1542-5ffccf9b9b8d",
           "name": "Retrieve Checkout Form Result",
           "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
             {
               "listen": "prerequest",
               "script": {
@@ -4478,6 +4459,24 @@
                   ""
                 ]
               }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
             }
           ],
           "request": {
@@ -4509,24 +4508,6 @@
           "_postman_id": "59237e53-b3a9-4170-eb8c-28b9c90a9cc7",
           "name": "Initialize Checkout with Card User Key",
           "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "var jsonData = JSON.parse(responseBody);",
-                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-                  "",
-                  "tests[\"pki string: \" + globals.pkiString ] = true",
-                  "tests[\"authorization: \" + globals.authorization ] = true",
-                  "tests[\"json: \" + request.data ] = true",
-                  "",
-                  "",
-                  "",
-                  ""
-                ]
-              }
-            },
             {
               "listen": "prerequest",
               "script": {
@@ -4711,6 +4692,24 @@
                   ""
                 ]
               }
+            },
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "var jsonData = JSON.parse(responseBody);",
+                  "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+                  "",
+                  "tests[\"pki string: \" + globals.pkiString ] = true",
+                  "tests[\"authorization: \" + globals.authorization ] = true",
+                  "tests[\"json: \" + request.data ] = true",
+                  "",
+                  "",
+                  "",
+                  ""
+                ]
+              }
             }
           ],
           "request": {
@@ -4771,22 +4770,6 @@
       "_postman_id": "fcb7f4ed-d083-694a-c8ca-599a2efd707b",
       "name": "Retrieve Bin",
       "event": [
-        {
-          "listen": "test",
-          "script": {
-            "type": "text/javascript",
-            "exec": [
-              "var jsonData = JSON.parse(responseBody);",
-              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-              "",
-              "tests[\"pki string: \" + globals.pkiString ] = true",
-              "tests[\"authorization: \" + globals.authorization ] = true",
-              "tests[\"json: \" + request.data ] = true",
-              "",
-              ""
-            ]
-          }
-        },
         {
           "listen": "prerequest",
           "script": {
@@ -4900,6 +4883,22 @@
               ""
             ]
           }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+              "",
+              "tests[\"pki string: \" + globals.pkiString ] = true",
+              "tests[\"authorization: \" + globals.authorization ] = true",
+              "tests[\"json: \" + request.data ] = true",
+              "",
+              ""
+            ]
+          }
         }
       ],
       "request": {
@@ -4931,20 +4930,6 @@
       "_postman_id": "a5564252-ee7f-0ee6-b432-fd378eecc0e1",
       "name": "Retrieve Installment",
       "event": [
-        {
-          "listen": "test",
-          "script": {
-            "type": "text/javascript",
-            "exec": [
-              "var jsonData = JSON.parse(responseBody);",
-              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-              "",
-              "tests[\"pki string: \" + globals.pkiString ] = true",
-              "tests[\"authorization: \" + globals.authorization ] = true",
-              "tests[\"json: \" + request.data ] = true"
-            ]
-          }
-        },
         {
           "listen": "prerequest",
           "script": {
@@ -5058,6 +5043,20 @@
               ""
             ]
           }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+              "",
+              "tests[\"pki string: \" + globals.pkiString ] = true",
+              "tests[\"authorization: \" + globals.authorization ] = true",
+              "tests[\"json: \" + request.data ] = true"
+            ]
+          }
         }
       ],
       "request": {
@@ -5089,24 +5088,6 @@
       "_postman_id": "499f5924-1853-adde-2522-201fcc49c1e9",
       "name": "Create Payment",
       "event": [
-        {
-          "listen": "test",
-          "script": {
-            "type": "text/javascript",
-            "exec": [
-              "var jsonData = JSON.parse(responseBody);",
-              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-              "",
-              "tests[\"pki string: \" + globals.pkiString ] = true",
-              "tests[\"authorization: \" + globals.authorization ] = true",
-              "tests[\"json: \" + request.data ] = true",
-              "",
-              "",
-              "",
-              ""
-            ]
-          }
-        },
         {
           "listen": "prerequest",
           "script": {
@@ -5303,6 +5284,24 @@
               ""
             ]
           }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+              "",
+              "tests[\"pki string: \" + globals.pkiString ] = true",
+              "tests[\"authorization: \" + globals.authorization ] = true",
+              "tests[\"json: \" + request.data ] = true",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
         }
       ],
       "request": {
@@ -5334,20 +5333,6 @@
       "_postman_id": "8ec84bdd-c9de-8ea2-a71f-f856438c84c4",
       "name": "Create Threeds Payment",
       "event": [
-        {
-          "listen": "test",
-          "script": {
-            "type": "text/javascript",
-            "exec": [
-              "var jsonData = JSON.parse(responseBody);",
-              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-              "",
-              "tests[\"pki string: \" + globals.pkiString ] = true",
-              "tests[\"authorization: \" + globals.authorization ] = true",
-              "tests[\"json: \" + request.data ] = true"
-            ]
-          }
-        },
         {
           "listen": "prerequest",
           "script": {
@@ -5459,6 +5444,20 @@
               ""
             ]
           }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+              "",
+              "tests[\"pki string: \" + globals.pkiString ] = true",
+              "tests[\"authorization: \" + globals.authorization ] = true",
+              "tests[\"json: \" + request.data ] = true"
+            ]
+          }
         }
       ],
       "request": {
@@ -5490,24 +5489,6 @@
       "_postman_id": "3b92644d-1c50-58c3-ecc1-d0e455c7ab47",
       "name": "Initialize Threeds Payment",
       "event": [
-        {
-          "listen": "test",
-          "script": {
-            "type": "text/javascript",
-            "exec": [
-              "var jsonData = JSON.parse(responseBody);",
-              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-              "",
-              "tests[\"pki string: \" + globals.pkiString ] = true",
-              "tests[\"authorization: \" + globals.authorization ] = true",
-              "tests[\"json: \" + request.data ] = true",
-              "",
-              "",
-              "",
-              ""
-            ]
-          }
-        },
         {
           "listen": "prerequest",
           "script": {
@@ -5698,6 +5679,24 @@
               ""
             ]
           }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+              "",
+              "tests[\"pki string: \" + globals.pkiString ] = true",
+              "tests[\"authorization: \" + globals.authorization ] = true",
+              "tests[\"json: \" + request.data ] = true",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
         }
       ],
       "request": {
@@ -5729,20 +5728,6 @@
       "_postman_id": "e7db8720-7e14-d6f7-8239-738bf3705182",
       "name": "Cancel",
       "event": [
-        {
-          "listen": "test",
-          "script": {
-            "type": "text/javascript",
-            "exec": [
-              "var jsonData = JSON.parse(responseBody);",
-              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-              "",
-              "tests[\"pki string: \" + globals.pkiString ] = true",
-              "tests[\"authorization: \" + globals.authorization ] = true",
-              "tests[\"json: \" + request.data ] = true"
-            ]
-          }
-        },
         {
           "listen": "prerequest",
           "script": {
@@ -5854,6 +5839,20 @@
               ""
             ]
           }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+              "",
+              "tests[\"pki string: \" + globals.pkiString ] = true",
+              "tests[\"authorization: \" + globals.authorization ] = true",
+              "tests[\"json: \" + request.data ] = true"
+            ]
+          }
         }
       ],
       "request": {
@@ -5885,20 +5884,6 @@
       "_postman_id": "64f9ba68-ca4c-d0c6-7e8b-829ed87437db",
       "name": "Refund",
       "event": [
-        {
-          "listen": "test",
-          "script": {
-            "type": "text/javascript",
-            "exec": [
-              "var jsonData = JSON.parse(responseBody);",
-              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-              "",
-              "tests[\"pki string: \" + globals.pkiString ] = true",
-              "tests[\"authorization: \" + globals.authorization ] = true",
-              "tests[\"json: \" + request.data ] = true"
-            ]
-          }
-        },
         {
           "listen": "prerequest",
           "script": {
@@ -6012,6 +5997,20 @@
               ""
             ]
           }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+              "",
+              "tests[\"pki string: \" + globals.pkiString ] = true",
+              "tests[\"authorization: \" + globals.authorization ] = true",
+              "tests[\"json: \" + request.data ] = true"
+            ]
+          }
         }
       ],
       "request": {
@@ -6043,20 +6042,6 @@
       "_postman_id": "bd795a02-3b89-d2cb-51a9-5e33d153f141",
       "name": "Retrieve Payment Result",
       "event": [
-        {
-          "listen": "test",
-          "script": {
-            "type": "text/javascript",
-            "exec": [
-              "var jsonData = JSON.parse(responseBody);",
-              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-              "",
-              "tests[\"pki string: \" + globals.pkiString ] = true",
-              "tests[\"authorization: \" + globals.authorization ] = true",
-              "tests[\"json: \" + request.data ] = true"
-            ]
-          }
-        },
         {
           "listen": "prerequest",
           "script": {
@@ -6168,6 +6153,20 @@
               ""
             ]
           }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+              "",
+              "tests[\"pki string: \" + globals.pkiString ] = true",
+              "tests[\"authorization: \" + globals.authorization ] = true",
+              "tests[\"json: \" + request.data ] = true"
+            ]
+          }
         }
       ],
       "request": {
@@ -6199,20 +6198,6 @@
       "_postman_id": "127d5911-3d9c-9690-a9bc-8b5471106445",
       "name": "Retrieve Payout Completed Transfer List",
       "event": [
-        {
-          "listen": "test",
-          "script": {
-            "type": "text/javascript",
-            "exec": [
-              "var jsonData = JSON.parse(responseBody);",
-              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-              "",
-              "tests[\"pki string: \" + globals.pkiString ] = true",
-              "tests[\"authorization: \" + globals.authorization ] = true",
-              "tests[\"json: \" + request.data ] = true"
-            ]
-          }
-        },
         {
           "listen": "prerequest",
           "script": {
@@ -6321,6 +6306,20 @@
               "var authorization = generateAuthorizationString(requestModel)",
               "postman.setGlobalVariable(\"authorization\", authorization);",
               ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+              "",
+              "tests[\"pki string: \" + globals.pkiString ] = true",
+              "tests[\"authorization: \" + globals.authorization ] = true",
+              "tests[\"json: \" + request.data ] = true"
             ]
           }
         }
@@ -6355,20 +6354,6 @@
       "name": "Retrieve Bounced Bank Transfer List",
       "event": [
         {
-          "listen": "test",
-          "script": {
-            "type": "text/javascript",
-            "exec": [
-              "var jsonData = JSON.parse(responseBody);",
-              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-              "",
-              "tests[\"pki string: \" + globals.pkiString ] = true",
-              "tests[\"authorization: \" + globals.authorization ] = true",
-              "tests[\"json: \" + request.data ] = true"
-            ]
-          }
-        },
-        {
           "listen": "prerequest",
           "script": {
             "type": "text/javascript",
@@ -6478,6 +6463,20 @@
               ""
             ]
           }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+              "",
+              "tests[\"pki string: \" + globals.pkiString ] = true",
+              "tests[\"authorization: \" + globals.authorization ] = true",
+              "tests[\"json: \" + request.data ] = true"
+            ]
+          }
         }
       ],
       "request": {
@@ -6509,24 +6508,6 @@
       "_postman_id": "5acbb87f-0d5f-cbe1-880a-5144f869b269",
       "name": "Create PreAuth Payment",
       "event": [
-        {
-          "listen": "test",
-          "script": {
-            "type": "text/javascript",
-            "exec": [
-              "var jsonData = JSON.parse(responseBody);",
-              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-              "",
-              "tests[\"pki string: \" + globals.pkiString ] = true",
-              "tests[\"authorization: \" + globals.authorization ] = true",
-              "tests[\"json: \" + request.data ] = true",
-              "",
-              "",
-              "",
-              ""
-            ]
-          }
-        },
         {
           "listen": "prerequest",
           "script": {
@@ -6718,6 +6699,24 @@
               ""
             ]
           }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+              "",
+              "tests[\"pki string: \" + globals.pkiString ] = true",
+              "tests[\"authorization: \" + globals.authorization ] = true",
+              "tests[\"json: \" + request.data ] = true",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
         }
       ],
       "request": {
@@ -6749,20 +6748,6 @@
       "_postman_id": "4f516e22-1222-5b17-db03-1336148e48b2",
       "name": "Create PostAuth",
       "event": [
-        {
-          "listen": "test",
-          "script": {
-            "type": "text/javascript",
-            "exec": [
-              "var jsonData = JSON.parse(responseBody);",
-              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
-              "",
-              "tests[\"pki string: \" + globals.pkiString ] = true",
-              "tests[\"authorization: \" + globals.authorization ] = true",
-              "tests[\"json: \" + request.data ] = true"
-            ]
-          }
-        },
         {
           "listen": "prerequest",
           "script": {
@@ -6873,6 +6858,20 @@
               "var authorization = generateAuthorizationString(requestModel)",
               "postman.setGlobalVariable(\"authorization\", authorization);",
               ""
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "var jsonData = JSON.parse(responseBody);",
+              "tests[\"response status \" + jsonData.status ] = jsonData.status === \"success\"",
+              "",
+              "tests[\"pki string: \" + globals.pkiString ] = true",
+              "tests[\"authorization: \" + globals.authorization ] = true",
+              "tests[\"json: \" + request.data ] = true"
             ]
           }
         }
